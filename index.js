@@ -1,1 +1,9 @@
-console.log("Hello from Git Flow Node App");
+const http = require('http');
+
+http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello Git Flow!');
+}).listen(3000);
+
+console.log("Server running on http://localhost:3000");
+
